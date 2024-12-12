@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLP Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script defer src="LLP_Calculator.js"></script>
+  <link rel="stylesheet" href="LLP_Format.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LLP Pricing Calculator</h1>
+    <form id="calculator-form">
+      <label for="file-input">Upload Excel File:</label><br>
+      <input type="file" id="file-input" accept=".xlsx,.xls"><br><br>
+
+      <label for="part-number">Part Number:</label><br>
+      <input type="text" id="part-number" required><br><br>
+
+      <label for="cycles-remaining">Total Cycles Remaining:</label><br>
+      <input type="number" id="cycles-remaining" required><br><br>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="results">
+      <p>Results will appear here...</p>
+    </div>
+  </div>
+</body>
+</html>
